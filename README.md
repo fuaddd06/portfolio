@@ -17,7 +17,9 @@ The public site is at https://fuaddd06.github.io/portfolio/.
 
 Edit content/portfolio.js to change your introduction, experience, education, languages, software, project descriptions, dates, roles, and video links. The three films marked as your own are listed first, with Something Good at the top.
 
-Add your portrait as media/portrait.jpg. Put a project's cover and stills in its matching folder under media/projects/ (for example, media/projects/something-good/cover.jpg and still-01.jpg). JPG, PNG and WebP images work. Update the matching paths in content/portfolio.js when you use different filenames. Add another project by copying a project entry, giving it a unique slug, and creating a matching media folder. Use owned: true for your own films and set the order in the content file.
+Add your portrait as media/portrait/portrait.jpg. Put a project's cover and stills in its matching folder under media/projects/ (for example, media/projects/something-good/cover.jpg and still-01.jpg). JPG, PNG and WebP images work. Update the matching paths in content/portfolio.js if you use different filenames. Add another project by copying a project entry, giving it a unique slug, and creating a matching media folder. Use owned: true for your own films and set the order in the content file.
+
+For a film video, paste a public YouTube or Vimeo link into that project's videoUrl field in content/portfolio.js. The project page embeds the film from that link.
 
 ## One-time Git setup on Windows
 
@@ -35,8 +37,8 @@ On the first push, Git may open a browser so you can sign in to GitHub. The rese
 
 ## Publish updates
 
-1. Save your changes and add any new photos or videos to the media/ folders.
-2. In PowerShell, run these commands:
+1. Save changes and add new photos to the matching media folders.
+2. In PowerShell, run:
 
 ~~~powershell
 git add .
